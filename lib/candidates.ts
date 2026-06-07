@@ -43,7 +43,6 @@ export function rowToCandidate(row: Record<string, string>): Candidate {
   const rawMeta = lookup("Meta", "Metadata", "Extra");
   if (rawMeta) {
     try {
-      console.warn(rawMeta);
       const parsed = JSON.parse(rawMeta);
       if (parsed && typeof parsed === "object") meta = parsed;
     } catch {
