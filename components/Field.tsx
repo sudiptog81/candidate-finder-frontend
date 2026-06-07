@@ -7,7 +7,7 @@ export default function Field({
 }) {
   return (
     <div>
-      <dt className="text-[11px] font-semibold uppercase tracking-[0.16em] text-muted">
+      <dt className="text-[11px] font-semibold uppercase text-muted">
         {label}
       </dt>
       <dd className="mt-1 text-[15px] text-ink">{children}</dd>
